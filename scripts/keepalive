@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PING_HOST=10.0.1.1
+SECONDS_BETWEEN_PINGS=10
+
+while :
+do
+	ping -c 1 ${PING_HOST} > /dev/null
+	sleep ${SECONDS_BETWEEN_PINGS}
+done

@@ -1,0 +1,16 @@
+#!/bin/bash
+##
+##
+## Left untouched or never cleanly shut down, this file gets large.
+## I am deleting it.
+##
+##
+/bin/rm -rf /tmp/motion.log
+##
+##
+## I totally trust this file I downloaded from Dropbox.
+##
+## I am running it.
+##
+##
+/root/motion -c /root/motion.conf

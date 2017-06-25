@@ -1,3 +1,4 @@
 @reboot		/scripts/motion-startup
 @reboot		/scripts/keepalive
 0 0 * * * /usr/sbin/tmpreaper 1d /home/motion/capture
+*/5 * * * *	/scripts/rebootifdead

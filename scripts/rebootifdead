@@ -1,0 +1,10 @@
+#!/bin/sh
+PING_HOST=10.0.1.1
+PINGS=5
+ping -c${PINGS} ${PING_HOST}
+
+if [ $? -eq 0 ]; then
+    echo "ok"
+else
+    /sbin/reboot
+fi

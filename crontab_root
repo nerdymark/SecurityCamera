@@ -1,4 +1,4 @@
-@reboot		/scripts/motion-startup
-@reboot		/scripts/keepalive
-0 0 * * * /usr/sbin/tmpreaper 1d /home/motion/capture
-*/5 * * * *	/scripts/rebootifdead
+@reboot		/scripts/motion-startup >/dev/null 2>&1
+@reboot		/scripts/keepalive >/dev/null 2>&1
+0 0 * * * /usr/sbin/tmpreaper 1d /home/motion/capture >/dev/null 2>&1
+*/5 * * * *	/scripts/rebootifdead >/dev/null 2>&1
